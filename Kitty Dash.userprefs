@@ -1,0 +1,23 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu's\DataStorage.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Game\LevelManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game\Player_Control.cs" Line="198" Column="24" />
+      <File FileName="Assets\Scripts\Menu's\DataStorage.cs" Line="28" Column="5" />
+      <File FileName="Assets\Scripts\Menu's\ShopManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game\UnityAds.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Fading.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu's\ScenesManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu's\ButtonControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game\EnemiesController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game\CollectiblesController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game\CameraController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scenes\World1\FORGE3D\Sci-Fi Effects\Examples\Code\F3DTrailExample.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
