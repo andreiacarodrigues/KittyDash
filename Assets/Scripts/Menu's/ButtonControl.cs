@@ -2,15 +2,16 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class ButtonControl : MonoBehaviour {
+public class ButtonControl : MonoBehaviour
+{
 
 	private SoundManager sm;
-	private Fading f;
+	// private Fading f;
 
 	void Start()
 	{
 		sm = FindObjectOfType<SoundManager> ();
-		f = FindObjectOfType<Fading> ();
+		// f = FindObjectOfType<Fading> ();
 	}
 
 	public void LoadPlayMenu(){
@@ -78,13 +79,15 @@ public class ButtonControl : MonoBehaviour {
 
 	private IEnumerator LoadNewLevel(string name)
 	{
-		//yield return new WaitForSeconds (0.1f);
+		yield return new WaitForSeconds (0.1f);
 
+		/*
 		float fadeTime = f.BeginFade (1);
 
 		yield return new WaitForSeconds (fadeTime);
 
 		f.ResetBeginFade ();
+		*/
 
 		SceneManager.LoadScene (name);
 	}
