@@ -80,6 +80,16 @@ public class LevelManager : MonoBehaviour {
 		if (gameOverMenu.activeSelf)
 			UpdateRevives ();
 
+		if (ds.revives == 0)
+			Debug.Log ("Has revives");
+		else
+			Debug.Log ("Doesn't have revive");
+
+		if (UnityAds.AdAvailable ())
+			Debug.Log ("Ads Available");
+		else
+			Debug.Log ("Ads Unavailable");
+
 		if (ds.revives == 0 && UnityAds.AdAvailable ())
 			watchAd.interactable = true;
 		else
