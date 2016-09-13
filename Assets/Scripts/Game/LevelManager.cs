@@ -167,9 +167,6 @@ public class LevelManager : MonoBehaviour {
 		bestScoreVictory.text = ds.score [sm.GetWorld ()-1] [lvl-1] + "";
 		bestScoreVictoryBG.text = bestScoreVictory.text;
 
-		ds.coins += coins;
-		ds.Save ();
-
 		player.victory = false;
 	}
 

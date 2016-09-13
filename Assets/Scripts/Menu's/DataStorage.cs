@@ -27,7 +27,6 @@ public class DataStorage : MonoBehaviour {
 
 		if (!Load ())
 			initInfo ();
-
 	}
 
 	private void initInfo()
