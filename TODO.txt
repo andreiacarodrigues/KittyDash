@@ -1,0 +1,10 @@
+Fix shop scaling
+Level Design
+Endless mode
+Characters, includes customization
+Achievements
+Audio
+Loading dictionary
+Dictionary
+Credits
+About
