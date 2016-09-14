@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class CheckpointControl : MonoBehaviour {
 
@@ -18,8 +19,15 @@ public class CheckpointControl : MonoBehaviour {
 	{
 		GameObject go = other.gameObject;
 
-		if (go.tag == "Player") {
+		if (go.tag == "Player")
+		{
 			lm.checkpoint = gameObject;
+			EnemiesController[] enemies = FindObjectsOfType<EnemiesController> ();
+			foreach(EnemiesController e in enemies)
+			{
+				Debug.Log ("Saving Enemy");
+				e.SavePosition ();
+			}
 		}
 	}
 }

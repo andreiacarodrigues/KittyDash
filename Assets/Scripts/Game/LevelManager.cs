@@ -225,10 +225,18 @@ public class LevelManager : MonoBehaviour {
 	public void Revive()
 	{
 		sound.play = Sound.BUTTON;
-		Time.timeScale = 1;
+		//Time.timeScale = 1;
 		player.transform.position = checkpoint.transform.position;
 
+		EnemiesController[] enemies = FindObjectsOfType<EnemiesController> ();
+		foreach(EnemiesController e in enemies)
+		{
+			Debug.Log ("Loading Enemy");
+			e.LoadPosition ();
+		}
+
 		player.Reset();
+		Time.timeScale = 1;
 		game.SetActive (true);
 		gameOverMenu.SetActive (false);
 		ds.revives--;
