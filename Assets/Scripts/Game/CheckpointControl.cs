@@ -21,6 +21,7 @@ public class CheckpointControl : MonoBehaviour {
 
 		if (go.tag == "Player")
 		{
+			Debug.Log ("Player Pos: " + go.transform.position.x);
 			lm.checkpoint = gameObject;
 			EnemiesController[] enemies = FindObjectsOfType<EnemiesController> ();
 			foreach(EnemiesController e in enemies)

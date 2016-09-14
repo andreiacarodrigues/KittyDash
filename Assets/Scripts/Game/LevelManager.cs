@@ -80,16 +80,6 @@ public class LevelManager : MonoBehaviour {
 		if (gameOverMenu.activeSelf)
 			UpdateRevives ();
 
-		if (ds.revives == 0)
-			Debug.Log ("Has revives");
-		else
-			Debug.Log ("Doesn't have revive");
-
-		if (UnityAds.AdAvailable ())
-			Debug.Log ("Ads Available");
-		else
-			Debug.Log ("Ads Unavailable");
-
 		if (ds.revives == 0 && UnityAds.AdAvailable ())
 			watchAd.interactable = true;
 		else
@@ -226,7 +216,7 @@ public class LevelManager : MonoBehaviour {
 	{
 		sound.play = Sound.BUTTON;
 		//Time.timeScale = 1;
-		player.transform.position = checkpoint.transform.position;
+		player.transform.position = checkpoint.transform.position + new Vector3(0.1f, 0, 0); //Offset Vector, saves enemies at the edge
 
 		EnemiesController[] enemies = FindObjectsOfType<EnemiesController> ();
 		foreach(EnemiesController e in enemies)
