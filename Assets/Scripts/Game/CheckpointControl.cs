@@ -23,6 +23,11 @@ public class CheckpointControl : MonoBehaviour {
 		{
 			Debug.Log ("Player Pos: " + go.transform.position.x);
 			lm.checkpoint = gameObject;
+
+			// Save player position
+			go.GetComponent<Player_Control> ().SavePosition ();
+
+			// Save enemies position
 			EnemiesController[] enemies = FindObjectsOfType<EnemiesController> ();
 			foreach(EnemiesController e in enemies)
 			{
